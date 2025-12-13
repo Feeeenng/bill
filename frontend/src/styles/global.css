@@ -1,0 +1,64 @@
+:root {
+  font-family: "Inter", "Helvetica Neue", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  background-color: #050505;
+  color: #f5f7ff;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at 10% 20%, #0a0e26, #030206 70%);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  min-height: 100vh;
+  padding: 24px;
+  background-image: linear-gradient(145deg, rgba(16, 132, 255, 0.15), rgba(255, 96, 209, 0.12));
+}
+
+.content-card {
+  background-color: rgba(6, 8, 18, 0.8);
+  border: 1px solid rgba(32, 56, 255, 0.25);
+  box-shadow: 0 10px 40px rgba(5, 16, 58, 0.45);
+  border-radius: 18px;
+}
+
+.entry-list {
+  max-height: 360px;
+  overflow-y: auto;
+}
+
+.voice-wave {
+  height: 48px;
+  display: flex;
+  gap: 4px;
+  align-items: flex-end;
+}
+
+.voice-wave span {
+  flex: 1;
+  background: linear-gradient(180deg, #36f6f0, #6246ff);
+  border-radius: 4px;
+  animation: pulse 1.2s infinite ease-in-out;
+}
+
+.voice-wave span:nth-child(odd) {
+  animation-delay: 0.2s;
+}
+
+@keyframes pulse {
+  0% {
+    height: 10%;
+  }
+  50% {
+    height: 100%;
+  }
+  100% {
+    height: 10%;
+  }
+}
