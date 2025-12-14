@@ -5,7 +5,7 @@ __pycache__/
 
 # C extensions
 *.so
-
+.venv/
 # Distribution / packaging
 .Python
 build/
@@ -25,6 +25,7 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -205,3 +206,6 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+frontend/node_modules/
